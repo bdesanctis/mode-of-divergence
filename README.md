@@ -1,2 +1,1 @@
-# mode-of-divergence
-Mathematica notebook associated with "How does the mode of evolutionary divergence affect reproductive isolation?"
+This folder contains a Mathematica notebook to accompany the paper "How does the mode of evolutionary divergence affect reproductive isolation?", along with an associated pdf of the notebook, for those who do not have Mathematica installed. The purpose here is to provide a proof of the variance equivalence given at the end of the Methods Section 3.1.2, for which the algebraic proof on paper is rather lengthy, but straightforward in theory. The Mathematica notebook shows the equivalence per dimension, per trait, and thus omit subscripts in the notebook, as the summation afterwards is fairly straightforward. 
