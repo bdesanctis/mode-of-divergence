@@ -1,0 +1,15 @@
+This repository contains the simulation data and code necessary to produce and process these data that are reported in
+
+"How does the mode of evolutionary divergence affect reproductive isolation?"
+by Bianca De Sanctis, Hilde Schneemann, and John J. Welch
+https://doi.org/10.1101/2022.03.08.483443
+
+The c++ simulation code can be found in the directory "simulation_code".
+Instructions for compilation can be found in the README file in that directory.
+
+The simulation data produced with this code is stored in the "complete_sims" directory.
+Each file contains the set of substitutions that fixed in a single population.
+
+To compute the relevant statistics, the compile_sims R script was used. The result is stored in "procSim.RData". To compile the simulations for figure S1, the compile_FigS1.R script is used which creates "procSim_FigS1.RData".
+
+"sims_param_combinations.csv" contains a list of the parameter combinations of the simulations used for these figures.
