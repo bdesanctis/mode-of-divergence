@@ -5,8 +5,14 @@ in a range of population genetic regimes
 
 ############################################################################################
 
-For more details see: "The geometry and genetics of hybridization" , Appendix 2.
-Schneemann H, Sanctis BD, Roze D, Bierne N, Welch JJ. 2020. The geometry and genetics of hybridization. Evolution (doi:10.1101/862235)
+For more details see: 
+"How does the mode of evolutionary divergence affect reproductive isolation?"
+De Sanctis B, Schneemann H, Welch JJ. 2022. (doi:10.1101/2022.03.08.483443)
+
+and
+
+"The geometry and genetics of hybridization" , Appendix 2.
+Schneemann H, Sanctis BD, Roze D, Bierne N, Welch JJ. 2020. Evolution (doi:10.1101/862235)
 
 For questions, email: hilde.schneemann@evobio.eu
 
@@ -67,19 +73,19 @@ The inputfile needs to specify the following parameters (see example inputfile.t
 Input parameters:
 
 ** Population genetics parameters
-N: size of the population (post-bottleneck if implemented); Number of diploid individuals
-L: genome map length in Morgans (mean nb of cross-overs per meiosis); set to -1 for free recombination [-1 used in paper]
+N: size of the population; Number of diploid individuals
+L: genome map length in Morgans (mean nb of cross-overs per meiosis); set to -1 for free recombination
 U: mutation rate per diploid genome
 
 ** Fitness landscape
-k: curvature of fitness function
+k: curvature of fitness function (set to 2 to match results in paper)
 n: number of phenotypic traits
 
 ** Distribution of mutation effects
-M: Flag for mutational effect model: 1 "bottom up"; 0 "top down"
+M: Flag for mutational effect model: 1 "bottom up" i.e. multivariate normal; 0 "top down" i.e. exponential
 s: The mean selection coefficient for random mutations in an optimal genotype
 q: mean phenotypic dominance effect (set to 1/2 in published work)
-F: inflation of variance of distribution of phenotypic dominance (set to -1 for a uniform distribution)
+F: inflation of variance of distribution of phenotypic dominance (set to -1 for a uniform distribution, 123 for 'realistic' distribution, and -999 for uniform "per-mutation" dominance)
 
 ** Demographic/environmental change
 E: Flag for environmental change (i.e. position of the optimum):
@@ -99,8 +105,8 @@ reps: Number of times simulation should be repeated
 ########                 OUTPUTFILE                                                 ########
 ############################################################################################
 
-The allopatry version will produce one outputfile called "res_*.txt".
-This file lists the details of each fixation that has occured during the fixation, in the order in which they became fixed.
+For each replicate, one outputfile will be produced called "res_*.txt".
+This file lists the details of each mutation that has fixed, in the order in which they became fixed.
 
 It has the following columns:
 position: position of the fixed mutation in the genome (between 0 and 1; infinite-sites model)
