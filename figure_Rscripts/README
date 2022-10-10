@@ -7,9 +7,12 @@ https://doi.org/10.1101/2022.03.08.483443
 The c++ simulation code can be found in the directory "simulation_code".
 Instructions for compilation can be found in the README file in that directory.
 
-The simulation data produced with this code is stored in the "complete_sims" directory.
-Each file contains the set of substitutions that fixed in a single population.
+The simulation data produced with this code should be stored in a directory called "complete_sims".
+Each file will contain the set of substitutions that fixed in a single population.
 
-To compute the relevant statistics, the compile_sims R script was used. The result is stored in "procSim.RData". To compile the simulations for figure S1, the compile_FigS1.R script is used which creates "procSim_FigS1.RData".
+To compute the relevant statistics, the "procsim.R" script was used. The results are stored in "procSim.RData". 
+To compile the simulations for figure S1, the "procsim_FigS1.R" script is used which creates "procSim_FigS1.RData".
 
-"sims_param_combinations.csv" contains a list of the parameter combinations of the simulations used for these figures.
+The scripts called "makeFigX.R" will use these RData objects to create the relevant Figure.
+
+"sims_param_combinations.csv" contains a list of the parameter combinations of the simulations used for these figures, and serves as input to the "procsim.R" script.
