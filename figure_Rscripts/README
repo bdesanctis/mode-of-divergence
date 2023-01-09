@@ -1,4 +1,4 @@
-This repository contains the simulation data and code necessary to produce and process these data that are reported in
+This repository contains the code necessary to produce and process the simulation data that are reported in
 
 "How does the mode of evolutionary divergence affect reproductive isolation?"
 by Bianca De Sanctis, Hilde Schneemann, and John J. Welch
@@ -10,7 +10,9 @@ Instructions for compilation can be found in the README file in that directory.
 The simulation data produced with this code should be stored in a directory called "complete_sims".
 Each file will contain the set of substitutions that fixed in a single population.
 
-To compute the relevant statistics, the "procsim.R" script was used. The results are stored in "procSim.RData". 
+To compute the relevant statistics, the "procsim.R" script was used. The results are stored in "procSim.RData" which can be downloaded from 
+doi.org/10.6084/m9.figshare.21843225.
+
 To compile the simulations for figure S1, the "procsim_FigS1.R" script is used which creates "procSim_FigS1.RData".
 
 The scripts called "makeFigX.R" will use these RData objects to create the relevant Figure.
