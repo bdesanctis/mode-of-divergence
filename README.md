@@ -7,6 +7,9 @@ The simulation_code folder contains the C++ files which can be compiled to run t
 The figure_Rscripts folder contains R scripts to compute the relevant quantitites from the simulation output. The output is stored in the RData file provided and another RData file found at doi.org/10.6084/m9.figshare.21843225, and these can be used to produce the figures. 
 
 
+
 [![DOI](https://zenodo.org/badge/533055768.svg)](https://zenodo.org/badge/latestdoi/533055768)
+
+
 
 
